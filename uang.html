@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Konversi Mata Uang</title>
+</head>
+<body>
+    <div class="container">
+        <h1>KALKULATOR KURS</h1>
+        <div class="input-group">
+            <label for="jumlah">Jumlah:</label>
+            <input type="number" id="jumlah" required>
+        </div>
+        <div class="input-group">
+            <label for="dari">Dari:</label>
+            <select id="dari">
+                <option value="EUR">Euro EUR</option>
+                <option value="IDR">Indonesian Rupiah IDR</option>
+                <option value="JPY">Japanese Yen JPY</option>
+                <option value="MYR">Malaysian Ringgit MYR</option>
+                <option value="KRW">South Korea Won KRW</option>
+                <option value="GBP">Pound sterling GBP</option>
+                <option value="USD">United State Dollar USD</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <label for="ke">Ke:</label>
+            <select id="ke">
+                <option value="EUR">Euro EUR</option>
+                <option value="IDR">Indonesian Rupiah IDR</option>
+                <option value="JPY">Japanese Yen JPY</option>
+                <option value="MYR">Malaysian Ringgit MYR</option>
+                <option value="KRW">South Korea Won KRW</option>
+                <option value="GBP">Pound sterling GBP</option>
+                <option value="USD">United State Dollar USD</option>
+            </select>
+        </div>
+        <button onclick="konversi()">Konversi</button>
+        <h2 id="hasil"></h2>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
